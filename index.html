@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_form</title>
+    <link rel="stylesheet" href="login_style.css">
+  
+</head>
+<body>
+    <div class="mdiv" >
+        <div class="lgn" align="center">
+            <div class="h1" class=".tracking-in-contract " id="hid">LOGIN </div>
+                <form autocomplete="off" onsubmit="chk()">
+                    <input type="text" name="un" placeholder="USERNAME" class="fld" maxlength="15" id="usr">
+                    <input type="password" name="pass" placeholder="PASSWORD" class="fld" maxlength="15" id="pss">
+                    <div class="lnk"><span><a href="#">Forget password</a></span></div>
+                    <input type="submit" name="lgn" value="LOGIN" id="btn1">
+                    <div class="lnk"><samp><a href="#">Create Account</a></samp></div>
+                
+                </form>
+           
+        </div>
+    </div>
+    <div>
+        <script type="text/javascript">
+            function chk()
+            {
+                let un1 ="rahul";
+                let pass1 ="pass";
+                let un2= document.getElementById("usr").value;
+                let pass2= document.getElementById("pss").value;
+                if ((un1==un2)&&(pass1==pass2))
+                {
+                    window.open("home.html");
+                }
+                else
+                {
+                    alert("wrong credintial");
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
